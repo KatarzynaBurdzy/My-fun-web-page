@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  padding: 30px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgb(169, 125, 194, 0.8),
+      rgb(209, 106, 209, 0.8)
+    ),
+    url(../images/clouds.png);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 93%,
+    50% 100%,
+    0 93%
+  ); /* shape of image*/
+  position: relative;
+}
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* changing relative point to center*/
+}
+
+.heading {
+  color: #eee;
+  margin-bottom: 60px;
+  text-align: center;
+  backface-visibility: hidden;
+}
+
+.heading-top {
+  display: block;
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 25px;
+  animation: appear1 3s ease-in;
+}
+
+.heading-bottom {
+  display: block;
+  margin-top: 50px;
+  letter-spacing: 2px;
+  animation: appear2 3s 3s;
+}
+
+.header-btn {
+  display: block;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #eee;
+
+  background: none;
+  border: solid rgb(80, 6, 80);
+  padding: 10px 15px;
+  border-radius: 10px;
+
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes appear1 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes appear2 {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+    color: darkmagenta;
+  }
+
+  50% {
+    transform: rotate(360deg);
+    color: magenta;
+  }
+
+  100% {
+    opacity: 100%;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes header-button {
+  0% {
+  }
+}
