@@ -1,0 +1,22 @@
+{
+  "name": "my-fun-web-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KatarzynaBurdzy/My-fun-web-page.git"
+  },
+  "author": "Katarzyna Burdzy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KatarzynaBurdzy/My-fun-web-page/issues"
+  },
+  "homepage": "https://github.com/KatarzynaBurdzy/My-fun-web-page#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
