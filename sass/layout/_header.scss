@@ -1,0 +1,23 @@
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba($color-bg-img-top, 0.8),
+      rgba($color-bg-img-bottom, 0.8)
+    ),
+    url(../images/clouds.png);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 93%,
+    50% 100%,
+    0 93%
+  ); /* shape of image*/
+  position: relative;
+
+  &__text-box {
+    @include relative-point-center(50%, 50%);
+  }
+}

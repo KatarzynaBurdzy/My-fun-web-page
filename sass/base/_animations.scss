@@ -1,0 +1,27 @@
+@keyframes appear1 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes appear2 {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+    color: darkmagenta;
+  }
+
+  50% {
+    transform: rotate(360deg);
+    color: magenta;
+  }
+
+  100% {
+    opacity: 100%;
+    transform: rotate(0deg);
+  }
+}

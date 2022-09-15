@@ -1,114 +1,13 @@
-$color-primary: #eee;
-$color-bg-img-top: #a97dc2;
-$color-bg-img-bottom: #d16ad1;
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-body {
-  background-color: $color-primary;
-  padding: 30px;
-  font-family: "Quicksand", sans-serif;
-}
+@import "components/button";
 
-.header {
-  height: 95vh;
-  background-image: linear-gradient(
-      to bottom,
-      rgba($color-bg-img-top, 0.8),
-      rgba($color-bg-img-bottom, 0.8)
-    ),
-    url(../images/clouds.png);
-  background-size: cover;
-  background-position: top;
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 93%,
-    50% 100%,
-    0 93%
-  ); /* shape of image*/
-  position: relative;
-}
+@import "layout/header";
 
-.header__text-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* changing relative point to center*/
-}
-
-.header__title {
-  color: $color-primary;
-  margin-bottom: 60px;
-  text-align: center;
-  backface-visibility: hidden;
-}
-
-.header__title--top {
-  display: block;
-  font-size: 80px;
-  font-weight: 700;
-  letter-spacing: 25px;
-  animation: appear1 3s ease-in;
-}
-
-.header__title--bottom {
-  display: block;
-  margin-top: 50px;
-  letter-spacing: 2px;
-  animation: appear2 3s 3s;
-}
-
-.header__btn {
-  display: block;
-  letter-spacing: 2px;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: $color-primary;
-
-  background: none;
-  border: solid rgb(80, 6, 80);
-  padding: 10px 15px;
-  border-radius: 10px;
-
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.header__btn:hover {
-  font-size: 1.7rem;
-}
-
-@keyframes appear1 {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 100%;
-  }
-}
-
-@keyframes appear2 {
-  0% {
-    opacity: 0;
-    transform: rotate(0deg);
-    color: darkmagenta;
-  }
-
-  50% {
-    transform: rotate(360deg);
-    color: magenta;
-  }
-
-  100% {
-    opacity: 100%;
-    transform: rotate(0deg);
-  }
-}
+@import "pages/home";

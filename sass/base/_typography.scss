@@ -1,0 +1,27 @@
+body {
+  background-color: $color-primary;
+  padding: 3rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+.heading {
+  color: $color-primary;
+  margin-bottom: 6rem;
+  text-align: center;
+  backface-visibility: hidden;
+
+  &--top {
+    display: block;
+    font-size: 8rem;
+    font-weight: 700;
+    letter-spacing: 2.5rem;
+    animation: appear1 3s ease-in;
+  }
+
+  &--bottom {
+    display: block;
+    margin-top: 5rem;
+    letter-spacing: 0.2rem;
+    animation: appear2 3s 3s;
+  }
+}

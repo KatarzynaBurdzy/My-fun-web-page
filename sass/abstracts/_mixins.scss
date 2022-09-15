@@ -1,0 +1,6 @@
+@mixin relative-point-center($top, $left) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  transform: translate(-50%, -50%);
+}
