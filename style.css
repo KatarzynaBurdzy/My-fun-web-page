@@ -30,21 +30,21 @@ body {
   position: relative;
 }
 
-.text-box {
+.header__text-box {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* changing relative point to center*/
 }
 
-.heading {
+.header__title {
   color: #eee;
   margin-bottom: 60px;
   text-align: center;
   backface-visibility: hidden;
 }
 
-.heading-top {
+.header__title--top {
   display: block;
   font-size: 80px;
   font-weight: 700;
@@ -52,14 +52,14 @@ body {
   animation: appear1 3s ease-in;
 }
 
-.heading-bottom {
+.header__title--bottom {
   display: block;
   margin-top: 50px;
   letter-spacing: 2px;
   animation: appear2 3s 3s;
 }
 
-.header-btn {
+.header__btn {
   display: block;
   letter-spacing: 2px;
   font-size: 1.5rem;
@@ -75,6 +75,10 @@ body {
   top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.header__btn:hover {
+  font-size: 1.7rem;
 }
 
 @keyframes appear1 {
@@ -102,10 +106,5 @@ body {
   100% {
     opacity: 100%;
     transform: rotate(0deg);
-  }
-}
-
-@keyframes header-button {
-  0% {
   }
 }
